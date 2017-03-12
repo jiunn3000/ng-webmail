@@ -14,10 +14,7 @@ import {
   selector: 'webmail-app',
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
-    './app.component.css',
-    /* tslint:disable */
-    '../../node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css'
-    /* tslint:enable */
+    './app.component.css'
   ],
   templateUrl: './app.component.html'
 })

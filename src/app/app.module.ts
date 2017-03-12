@@ -27,9 +27,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
+import { WebmailHeaderComponent } from './header/header.component';
+import { WebmailSidebarComponent } from './sidebar/sidebar.component';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
+
+
 
 // Application wide providers
 const APP_PROVIDERS = [];
@@ -43,14 +47,16 @@ const APP_PROVIDERS = [];
     AppComponent,
     AboutComponent,
     HomeComponent,
-    NoContentComponent
+    NoContentComponent,
+    WebmailHeaderComponent,
+    WebmailSidebarComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
     FormsModule,
     HttpModule,
     NglModule.forRoot(),
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+    // RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

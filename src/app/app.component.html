@@ -1,18 +1,15 @@
-<nav>
-  <a [routerLink]=" ['./'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        Index
-      </a>
-  <a [routerLink]=" ['./home'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        Home
-      </a>
-  <a [routerLink]=" ['./detail'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        Detail
-      </a>
-  <a [routerLink]=" ['./about'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        About
-      </a>
-</nav>
+<webmail-header></webmail-header>
 
-<main>
-  <router-outlet></router-outlet>
-</main>
+<div class="webmail-header-placeholder"></div>
+
+<div class="slds-grid webmail-main">
+
+  <div class="slds-col slds-size--2-of-8 slds-p-around--medium webmail-main-sidebar">
+    <webmail-sidebar></webmail-sidebar>
+  </div>
+
+  <div class="slds-col slds-size--6-of-8">
+    8 of 12 column
+  </div>
+
+</div>
