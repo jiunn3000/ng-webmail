@@ -5,5 +5,5 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './sidebar.component.html'
 })
 export class WebmailSidebarComponent {
-
+    private open: boolean = true;
 }
